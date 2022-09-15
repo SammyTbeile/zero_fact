@@ -28,6 +28,7 @@ fn main() {
     let args = Cli::parse();
     println!("Calculating number of zeroes in {}!", args.n);
     let fact = calc_fact(args.n);
+//    println!("{}", fact.to_str_radix(10).len());
     let num_zeroes = count_zeroes(fact.to_str_radix(10));
     println!("{}! has {} zeroes", args.n, num_zeroes);
 }
